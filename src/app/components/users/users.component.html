@@ -1,0 +1,36 @@
+<div>
+  <p class="mt-5 mb-6">users works!</p>
+  <p>
+    Hello i m {{ firstName + " " + lastName + hobby.hobit_1 }} <br />
+    Licences professionnel in computer scienties, i m web and mobile developper.
+    <br />...
+  </p>
+
+  <h1>ANotherUser</h1>
+    <div>
+      <ul *ngFor="let user of anotherUsers">
+        <li> Users : {{ user.firstName + " " + user.lastName }} ; </li>
+      </ul>
+    </div>
+
+  <button (click)="onClick()" class="btn btn-primary">
+    my Hobby {{ nbrClick }}?
+  </button>
+
+  <div class="alert alert-warning mt-5 mb-6"><p>Modify Hobby</p></div>
+
+  <form action="">
+    <div>
+      <label for="hobby_1">First hobby</label>
+      <input type="text" [(ngModel)]="hobby.hobit_1" name="hobby_1" />
+    </div>
+    <div>
+      <label for="hobby_2">Secont hobby</label
+      ><input type="text" [(ngModel)]="hobby.hobit_2" name="hobby_2" />
+    </div>
+    <div>
+      <label for="hobby_3">Third hobby</label
+      ><input type="text" [(ngModel)]="hobby.hobit_3" name="hobby_3" />
+    </div>
+  </form>
+</div>
